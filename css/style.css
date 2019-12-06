@@ -6,13 +6,36 @@
   padding: 0;
 }
 
+body {
+  background: url(../image/bg.png);
+}
+
 .container {
   width: 975px;
   margin: 0 auto;
 }
 
-body {
-  background: url(../image/bg.png);
+.input {
+  width: 284px;
+  height: 43px;
+  font-size: 21px;
+  color: rgba(128, 130, 134, 0.3);
+  font-family: 'Akrobat Regular';
+  text-align: center;
+  line-height: 43;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  width: 329px;
+  height: 43px;
+  background-color: #de0d08;
+  color: #ffffff;
+  font-size: 21px;
+  font-family: 'Akrobat Bold';
+  outline: none;
+  cursor: pointer;
 }
 
 @font-face {
@@ -43,6 +66,14 @@ body {
   font-family: 'Corbel Regular';
   src: url("../fonts/Corbel/");
   src: url("../fonts/Corbel/?#iefix") format("embedded-opentype"), url("../fonts/Corbel/Corbel.woff") format("woff"), url("../fonts/Corbel/Corbel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arctika script Regular';
+  src: url("../fonts/Arctika-script/");
+  src: url("../fonts/Arctika-script/?#iefix") format("embedded-opentype"), url("../fonts/Arctika-script/Arctikascript.woff") format("woff"), url("../fonts/Arctika-script/Arctikascript.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -111,6 +142,40 @@ body {
   border-radius: 100%;
 }
 
+.banner {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 80px;
+  min-height: 248px;
+  background-color: #f7f9ef;
+  -webkit-box-shadow: 0 0 10px rgba(16, 17, 17, 0.4);
+          box-shadow: 0 0 10px rgba(16, 17, 17, 0.4);
+  z-index: 1000000;
+}
+
+.banner__title {
+  font-family: 'Arctika script Regular';
+  border: 5px solid #f8f8f8;
+  text-shadow: 0 4px 8px rgba(16, 17, 17, 0.75);
+  color: #de2c2f;
+  font-size: 117px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 400;
+  line-height: 66.67px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #f8f8f8;
+}
+
+.big {
+  font-size: 108px;
+}
+
+.sale {
+  margin-top: 328px;
+}
+
 .sale__block {
   min-height: 118px;
   background: url("../image/sale/sale-bg.png") center center;
@@ -172,6 +237,30 @@ body {
   -webkit-box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
           box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
   background-color: #dfe4ec;
+}
+
+.item-card-hide {
+  position: absolute;
+  width: 441px;
+  background-color: #ffffff;
+  color: #004734;
+  font-family: 'Akrobat Regular';
+  font-size: 21px;
+  z-index: 1000;
+  padding: 22px;
+  opacity: 0;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.item-card-hide_close {
+  position: absolute;
+  content: '';
+  height: 23px;
+  width: 23px;
+  background: url(../image/cards/dell.png);
+  top: 10px;
+  right: 10px;
 }
 
 .item-card__top {
@@ -270,6 +359,7 @@ body {
 
 .item-card-description {
   margin-top: 15px;
+  position: relative;
 }
 
 .item-card-description__title {
@@ -335,5 +425,68 @@ body {
   height: 27px;
   background-color: #aeaeae;
   border-radius: 50%;
+}
+
+.show {
+  opacity: 1;
+}
+
+.feedback-form {
+  min-height: 95px;
+  border: 3px dotted #608f7f;
+  background-color: #80c9b0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.feedback {
+  margin-bottom: 58px;
+  position: relative;
+}
+
+.feedback::before {
+  position: absolute;
+  content: '';
+  width: 78px;
+  height: 51px;
+  background: url("../image/feedback/arrow-r.png");
+  top: 20px;
+  left: 400px;
+}
+
+.feedback::after {
+  position: absolute;
+  content: '';
+  width: 78px;
+  height: 51px;
+  background: url("../image/feedback/arrow-l.png");
+  top: 20px;
+  right: 400px;
+}
+
+.footer {
+  background-color: #a4a4a5;
+}
+
+.footer-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer__text {
+  font-family: 'Akrobat Regular';
+  text-decoration: underline;
+  letter-spacing: 0.17px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 33.33px;
+  color: rgba(255, 255, 255, 0.7);
 }
 /*# sourceMappingURL=style.css.map */

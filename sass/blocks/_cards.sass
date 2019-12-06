@@ -12,6 +12,25 @@
   box-shadow: 0 0 15px rgba(16, 17, 17, 0.4)
   background-color: #dfe4ec
   // opacity: 0.7
+  &-hide
+    position: absolute
+    width: 441px
+    background-color: #ffffff
+    color: #004734
+    font-family: 'Akrobat Regular'
+    font-size: 21px
+    z-index: 1000
+    padding: 22px
+    opacity: 0
+    transition: .7s
+    &_close
+      position: absolute
+      content: ''
+      height: 23px
+      width: 23px
+      background: url(../image/cards/dell.png)
+      top: 10px
+      right: 10px
   &__top
     display: flex
     justify-content: flex-start
@@ -71,6 +90,7 @@
       border-bottom: 1px dashed #ab310c
   &-description
     margin-top: 15px
+    position: relative
     &__title
       margin-left: 19px
       margin-bottom: 13px
@@ -113,4 +133,6 @@
       height: 27px
       background-color: #aeaeae
       border-radius: 50%
+.show
+  opacity: 1
 
