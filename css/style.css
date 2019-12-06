@@ -39,6 +39,16 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 567px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .input {
+    margin-bottom: 15px;
+  }
+}
+
 @font-face {
   font-family: 'Tahoma Regular';
   src: url("../fonts/Tahoma/");
@@ -145,6 +155,13 @@ body {
           justify-content: center;
   border: 2px solid #ffffff;
   border-radius: 100%;
+}
+
+@media (max-width: 567px) {
+  .header-section {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .banner {
@@ -331,7 +348,7 @@ body {
 
 .item-card-hide {
   position: absolute;
-  width: 441px;
+  width: 440px;
   background-color: #ffffff;
   color: #004734;
   font-family: 'Akrobat Regular';
@@ -570,6 +587,22 @@ body {
   background: url("../image/feedback/arrow-l.png");
   top: 20%;
   right: 10%;
+}
+
+@media (max-width: 992px) {
+  .feedback-form {
+    padding: 10px 0  10px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback::before {
+    display: none;
+  }
+  .feedback::after {
+    display: none;
+  }
 }
 
 .footer {
