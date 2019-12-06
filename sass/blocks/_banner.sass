@@ -39,12 +39,6 @@
       width: 146px
       height: 16px
       transform: rotate(-90deg)
-
-
-
-
-
-
   &::before
     position: absolute
     content: ''
@@ -75,3 +69,20 @@
     -webkit-text-stroke-color: #f8f8f8
 .big
   font-size: 108px
+@media(max-width: 1200px)
+  .banner
+    &::before
+      display: none
+    &-sale
+      display: none
+    &-snowman
+      display: none
+@media(max-width: 992px)
+  .banner
+    display: none
+@media(max-width: 768px)
+ .banner
+  display: none
+  
+
+  
