@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -154,7 +155,6 @@ body {
   background-color: #f7f9ef;
   -webkit-box-shadow: 0 0 10px rgba(16, 17, 17, 0.4);
           box-shadow: 0 0 10px rgba(16, 17, 17, 0.4);
-  z-index: 1000000;
   position: relative;
 }
 
@@ -174,6 +174,30 @@ body {
   background: url(../image/banner/banner-sale.png);
   top: 0;
   left: 20%;
+}
+
+.banner-arrow {
+  position: absolute;
+  width: 111px;
+  height: 231px;
+  background: url(../image/banner/banner-arrow.png);
+  bottom: -50%;
+  right: 3%;
+  z-index: 999;
+}
+
+.banner-arrow::after {
+  position: absolute;
+  content: 'Лови момент!';
+  font-size: 25px;
+  font-family: 'Arctika script Regular';
+  color: #ffffff;
+  left: -25px;
+  bottom: 35%;
+  width: 146px;
+  height: 16px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .banner::before {

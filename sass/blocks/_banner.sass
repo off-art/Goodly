@@ -5,7 +5,6 @@
   min-height: 248px
   background-color: #f7f9ef
   box-shadow: 0 0 10px rgba(16, 17, 17, 0.4)
-  z-index: 1000000
   position: relative
   &-snowman
     position: absolute
@@ -21,6 +20,28 @@
     background: url(../image/banner/banner-sale.png)
     top: 0
     left: 20%
+  &-arrow
+    position: absolute
+    width: 111px
+    height: 231px
+    background: url(../image/banner/banner-arrow.png)
+    bottom: -50%
+    right: 3%
+    z-index: 999
+    &::after
+      position: absolute
+      content: 'Лови момент!'
+      font-size: 25px
+      font-family: 'Arctika script Regular'
+      color: #ffffff
+      left: -25px
+      bottom: 35%
+      width: 146px
+      height: 16px
+      transform: rotate(-90deg)
+
+
+
 
 
 
