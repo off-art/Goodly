@@ -30,12 +30,16 @@ body
   font-family: 'Akrobat Bold'
   outline: none
   cursor: pointer
-@media(max-width: 567px)
+  &:hover
+    background-color: lighten(#de0d08, 10%)
+@media(max-width: 1200px)
+  .input
+    margin-bottom: 15px
+@media(max-width: 992px)
   .container
     width: 80%
     margin: 0 auto
-  .input
-    margin-bottom: 15px
+
 
   
 

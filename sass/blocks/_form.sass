@@ -15,7 +15,7 @@
     height: 51px
     background: url('../image/feedback/arrow-r.png')
     top: 20%
-    left: 10%
+    left: 1%
   &::after
     position: absolute
     content: ''
@@ -23,14 +23,24 @@
     height: 51px
     background: url('../image/feedback/arrow-l.png')
     top: 20%
-    right: 10%
-@media(max-width: 992px)
+    right: 1%
+@media(max-width: 1200px)
   .feedback
     &-form
+      width: 80%
+      margin: auto
       padding: 10px 0  10px 0
       flex-direction: column
     &::before
       display: none
     &::after
       display: none
+// @media(max-width: 992px)
+//   .feedback
+//     &-form
+//       width: 80%
+//     &::before
+//       display: none
+//     &::after
+//       display: none
 
