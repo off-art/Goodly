@@ -610,6 +610,7 @@ body {
             align-items: center;
   }
   .item-card-hide__text {
+    margin-top: 10px;
     font-size: 11px;
   }
   .item-card-hide {
