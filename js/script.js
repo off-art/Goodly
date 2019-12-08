@@ -1,28 +1,32 @@
 let desc = document.querySelectorAll('.item-card__desc_text'); // Кнопка "Важная информация"
-let hid = document.querySelectorAll('.item-card-hide'); // Скрытый блок
-let close = document.querySelectorAll('.item-card-hide_close'); // Кнопка крестик
+let close = document.querySelectorAll('.item-card-hide_close'); // Кнопка закрытия 
 
-
-desc.forEach(function(element) {
-  element.onclick = show;
+desc.forEach(function (element) {
+  element.onclick = function(e) {
+    e.preventDefault();
+    let data = this.getAttribute('data');
+    let hide = document.querySelector(`.item-card-hide[data = "${data}"]`);
+    console.log(hide)
+    hide.classList.toggle('show');
+  }
+});
+close.forEach(function (el) {
+  el.onclick = function (e) {
+    e.preventDefault();
+    console.log('work')
+    let data = this.getAttribute('data');
+    let hide = document.querySelector(`.item-card-hide[data = "${data}"]`);
+    hide.classList.remove('show');
+  }
 });
 
-function show(e) {
-  e.preventDefault();
-  let data = this.getAttribute('data');
-  let hide = document.querySelector(`.item-card-hide[data = "${data}"]`);
-  hide.classList.toggle('show');
-}
 
-// // Кнопка закрытия 
-close.forEach( function(el) {
-  el.onclick = function(e) {
-    hid.forEach(function(elem) {
-      e.preventDefault();
-      elem.classList.remove('show')
-    })
-  }
-})
-
-
-
+// // Кнопка закрытия всех элементов сразу  
+// close.forEach( function(el) {
+//   el.onclick = function(e) {
+//     hid.forEach(function(elem) {
+//       e.preventDefault();
+//       elem.classList.remove('show')
+//     })
+//   }
+// })

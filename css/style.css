@@ -56,6 +56,19 @@ body {
   }
 }
 
+@media (max-width: 567px) {
+  .btn {
+    width: 80%;
+    margin: auto;
+    font-size: 11px;
+  }
+  .input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
 @font-face {
   font-family: 'Tahoma Regular';
   src: url("../fonts/Tahoma/");
@@ -358,16 +371,14 @@ body {
 
 .item-card {
   margin-bottom: 65px;
-  max-width: 440px;
   -webkit-box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
           box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
   background-color: #dfe4ec;
-  padding-right: 20px;
 }
 
 .item-card-hide {
   position: absolute;
-  width: 440px;
+  width: 100%;
   background-color: #ffffff;
   color: #004734;
   font-family: 'Akrobat Regular';
@@ -411,6 +422,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 18px;
+  margin-left: 18px;
 }
 
 .item-card__price_top {
@@ -600,7 +613,7 @@ body {
     font-size: 11px;
   }
   .item-card-hide {
-    max-width: 256px;
+    width: 100%;
   }
   .item-card__logo {
     display: -webkit-box;
@@ -610,6 +623,10 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 0;
+  }
+  .item-card-description__text {
+    text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -667,6 +684,12 @@ body {
   }
   .feedback::after {
     display: none;
+  }
+}
+
+@media (max-width: 567px) {
+  .feedback-form {
+    width: 80%;
   }
 }
 

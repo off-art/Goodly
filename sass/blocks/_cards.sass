@@ -7,15 +7,16 @@
 
 .item-card
   margin-bottom: 65px
-  max-width: 440px
+  // width: 440px
   // height: 609px
   box-shadow: 0 0 15px rgba(16, 17, 17, 0.4)
   background-color: #dfe4ec
-  padding-right: 20px;
+  // padding-right: 20px;
   // opacity: 0.7
   &-hide
     position: absolute
-    width: 440px
+    // width: 440px
+    width: 100%
     background-color: #ffffff
     color: #004734
     font-family: 'Akrobat Regular'
@@ -41,6 +42,8 @@
   &__price
     display: flex
     flex-direction: column
+    margin-right: 18px
+    margin-left: 18px
     &_top
       margin-bottom: 11px
       margin-top: 25px
@@ -157,8 +160,11 @@
   .item-card-hide__text
     font-size: 11px
   .item-card-hide
-    max-width: 256px
+    width: 100%
   .item-card__logo
     display: flex
     justify-content: center
     margin-right: 0
+  .item-card-description__text
+    text-align: center
+    margin-left: 0
