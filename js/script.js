@@ -4,8 +4,8 @@ let close = document.querySelectorAll('.item-card-hide_close'); // Кнопка 
 desc.forEach(function (element) {
   element.onclick = function(e) {
     e.preventDefault();
-    let data = this.getAttribute('data');
-    let hide = document.querySelector(`.item-card-hide[data = "${data}"]`);
+    let data = this.getAttribute('data-open');
+    let hide = document.querySelector(`.item-card-hide[data-open = "${data}"]`);
     console.log(hide)
     hide.classList.toggle('show');
   }
@@ -14,8 +14,8 @@ close.forEach(function (el) {
   el.onclick = function (e) {
     e.preventDefault();
     console.log('work')
-    let data = this.getAttribute('data');
-    let hide = document.querySelector(`.item-card-hide[data = "${data}"]`);
+    let data = this.getAttribute('data-open');
+    let hide = document.querySelector(`.item-card-hide[data-open = "${data}"]`);
     hide.classList.remove('show');
   }
 });
