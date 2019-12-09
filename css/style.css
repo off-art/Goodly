@@ -374,6 +374,17 @@ body {
   -webkit-box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
           box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
   background-color: #dfe4ec;
+  position: relative;
+}
+
+.item-card::after {
+  position: absolute;
+  content: '';
+  width: 105px;
+  height: 90px;
+  background: url("../image/cards/sale-block.png") center center no-repeat;
+  right: -10px;
+  top: -15px;
 }
 
 .item-card-hide {
